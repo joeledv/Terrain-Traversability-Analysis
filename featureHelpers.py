@@ -90,7 +90,7 @@ def second_derivative(df):
     second = np.convolve(first, [1, 0, -1], mode='valid')
     return np.median(second)
 
-def process_dataframe(df_path, output_path):
+def process_dataframe(df_path, output_path, classification_label):
     """
     Process a complete DataFrame computing features for each point and save to CSV.
 
@@ -100,16 +100,17 @@ def process_dataframe(df_path, output_path):
     Args:
         df_path (str): Path to the input CSV file.
         output_path (str): Path where the output CSV will be saved.
+        classification_label (str): Label for the terrain class (e.g., 'adoquin', 'grava', 'asfalto').
 
     Returns:
         pl.DataFrame: Polars DataFrame with the computed features for each point.
     """
     # Read data
-    df = pl.read_csv(df_path).head(1000)
+    df = pl.read_csv(df_path)
     xyz = df[['X', 'Y', 'Z']].to_numpy()
     n = len(df)
 
-    print(f"Processing {n:,} points...")
+    print(f"Processing {n:,} points with label '{classification_label}'...")
 
     # Pre-allocate arrays
     xnorms = np.zeros(n)
@@ -146,7 +147,8 @@ def process_dataframe(df_path, output_path):
         'Acceleration (REFLECTIVITY %)': second_ders,
         'RANGE (mm)': df['RANGE (mm)'].to_numpy(),
         'ROW': df['ROW'].to_numpy(),
-        'DESTAGGERED IMAGE COLUMN': df['DESTAGGERED IMAGE COLUMN'].to_numpy()
+        'DESTAGGERED IMAGE COLUMN': df['DESTAGGERED IMAGE COLUMN'].to_numpy(),
+        'Class': [classification_label] * n  # Repeat label for all rows
     })
 
     # Save results
