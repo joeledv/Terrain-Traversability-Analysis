@@ -2,7 +2,7 @@ import numpy as np
 import polars as pl
 from sklearn.decomposition import PCA
 from sklearn.neighbors import NearestNeighbors
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 
 def knn(xyz, index, df):
     """
