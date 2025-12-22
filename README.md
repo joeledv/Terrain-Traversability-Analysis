@@ -63,7 +63,14 @@ This transformation ensures spatial consistency across datasets captured at diff
 
 ### 4. Feature Extraction and Vectorization
 
-From the transformed point clouds, local features are computed for each point to characterize terrain geometry and material properties. Extracted features include:
+From the transformed point clouds, local features are computed for each point to characterize terrain geometry and material properties. Feature extraction is based on a **K-Nearest Neighbors (KNN)** approach to describe the local neighborhood of each point.
+
+Two neighborhood sizes were evaluated:
+
+- **K = 10**, capturing fine-grained local geometric variations  
+- **K = 50**, capturing more global surface characteristics and increased spatial smoothing  
+
+The extracted features include:
 
 - Relative height
 - Local height variance
@@ -72,7 +79,7 @@ From the transformed point clouds, local features are computed for each point to
 - Surface normal components
 - LiDAR return intensity and reflectivity
 
-Each point is represented as a feature vector, forming the input to the deep learning model.
+Each point is represented as a feature vector, forming the input to the deep learning model. The comparison between K = 10 and K = 50 allowed evaluating the impact of neighborhood size on classification performance and robustness.
 
 ---
 
@@ -101,10 +108,11 @@ Model performance is evaluated using:
 - F1-score
 - Confusion matrix
 
-To assess generalization capability, the trained model was tested on terrain samples from locations not used during training. This validates robustness against changes in geometry, texture, and environmental conditions.
+To assess generalization capability, the trained model was tested on terrain samples from locations not used during training. This validates robustness against changes in geometry, texture, and environmental conditions. Additionally, the results obtained using **K = 10 and K = 50** were compared to analyze the trade-off between local sensitivity and spatial stability.
 
 ---
 
 ### Repository Structure (Development)
+
 
 
