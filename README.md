@@ -110,9 +110,5 @@ Model performance is evaluated using:
 
 To assess generalization capability, the trained model was tested on terrain samples from locations not used during training. This validates robustness against changes in geometry, texture, and environmental conditions. Additionally, the results obtained using **K = 10 and K = 50** were compared to analyze the trade-off between local sensitivity and spatial stability.
 
----
-
-### Repository Structure (Development)
-
 
 
