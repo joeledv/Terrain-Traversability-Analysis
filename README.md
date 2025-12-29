@@ -1,5 +1,15 @@
 # Terrain-Traversability-Analysis
 
+### Installation
+
+## Requirements
+
+- Python: 3.10 (recommended)
+- Notes: The listed dependencies (e.g., TensorFlow 2.11) were tested on Python 3.8–3.10. If you plan to use Python >= 3.11 or 3.13+, verify that all packages (especially TensorFlow, NumPy, and binary wheels) support that version before upgrading.
+- Install dependencies from `requirements.txt`: `pip install -r requirements.txt`
+- pip
+- Git (only needed if direct installation fails)
+
 ## Development
 
 This section describes the complete development pipeline implemented to transform raw 3D LiDAR data into structured information for automatic terrain classification using deep learning.
