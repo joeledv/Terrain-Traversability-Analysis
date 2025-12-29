@@ -21,10 +21,10 @@ The development workflow follows a modular and reproducible pipeline composed of
 
 1. LiDAR data acquisition  
 2. Preprocessing and filtering  
-3. Geometric transformation (Bird’s Eye View)  
-4. Feature extraction and vectorization  
-5. Neural network training  
-6. Semantic Segmentation 
+2.1. Geometric transformation (Bird’s Eye View)  
+3. Feature extraction and vectorization  
+4. Neural network training  
+5. Semantic Segmentation 
 
 Each stage was designed to be independent, scalable, and suitable for real-world deployment scenarios.
 
@@ -57,7 +57,7 @@ This step improves geometric consistency and reduces variability that could nega
 
 ---
 
-### 3. Geometric Transformation (Bird’s Eye View)
+#### 2.1. Geometric Transformation (Bird’s Eye View)
 
 Due to the physical inclination of the LiDAR sensor during data acquisition, the raw point clouds are not aligned with the ground plane. To correct this:
 
@@ -70,7 +70,7 @@ This transformation ensures spatial consistency across datasets captured at diff
 
 ---
 
-### 4. Feature Extraction and Vectorization
+### 3. Feature Extraction and Vectorization
 
 From the transformed point clouds, local features are computed for each point to characterize terrain geometry and material properties. Feature extraction is based on a **K-Nearest Neighbors (KNN)** approach to describe the local neighborhood of each point.
 
@@ -92,7 +92,7 @@ Each point is represented as a feature vector, forming the input to the deep lea
 
 ---
 
-### 5. Classification Model
+### 4. Classification Model
 
 - Architecture: **Multilayer Perceptron (MLP)**
 - Input: per-point feature vectors
@@ -107,7 +107,7 @@ The model performs **point-wise semantic segmentation** over the LiDAR point clo
 
 ---
 
-### 6. Evaluation and Generalization
+### 5. Evaluation and Generalization
 
 Model performance is evaluated using:
 
