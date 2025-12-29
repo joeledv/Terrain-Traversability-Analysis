@@ -24,7 +24,7 @@ The development workflow follows a modular and reproducible pipeline composed of
 3. Geometric transformation (Bird’s Eye View)  
 4. Feature extraction and vectorization  
 5. Neural network training  
-6. Evaluation and generalization  
+6. Semantic Segmentation 
 
 Each stage was designed to be independent, scalable, and suitable for real-world deployment scenarios.
 
