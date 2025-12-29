@@ -6,10 +6,9 @@
 
 - Python: 3.10+ (recommended)
 - Notes: The listed dependencies (e.g., TensorFlow 2.11) were tested on Python 3.8–3.10. If you plan to use Python >= 3.11 or 3.13+, verify that all packages (especially TensorFlow, NumPy, and binary wheels) support that version before upgrading.
-- Install dependencies from `requirements.txt`: `pip install -r requirements.txt`
 - pip
-- Git (only needed if direct installation fails)
-
+- Install dependencies from `requirements.txt`: `pip install -r requirements.txt`
+    
 ## Development
 
 <img width="1830" height="1016" alt="Captura de pantalla 2025-12-28 181331" src="https://github.com/user-attachments/assets/85244ca8-e3df-4502-8122-6442f2af7ce0" />
