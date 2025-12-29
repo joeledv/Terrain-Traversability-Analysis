@@ -119,5 +119,16 @@ Model performance is evaluated using:
 
 To assess generalization capability, the trained model was tested on terrain samples from locations not used during training. This validates robustness against changes in geometry, texture, and environmental conditions. Additionally, the results obtained using **K = 10 and K = 50** were compared to analyze the trade-off between local sensitivity and spatial stability.
 
+#### K = 10
+- Accuracy: 97.82%
+- Precision: 97.78%
+- Recall: 97.76%
+- F1-score: 97.77%
+
+#### K = 50
+- Accuracy: 99.30%
+- Precision: 99.28%
+- Recall: 99.28%
+- F1-score: 99.28%
 
 
