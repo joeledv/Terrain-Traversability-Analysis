@@ -136,7 +136,9 @@ To assess generalization capability, the trained model was tested on terrain sam
 
 #### Cobblestone
 
+<p align="center">
 <img width="787" height="446" alt="image" src="https://github.com/user-attachments/assets/31ef4a7f-6143-4793-a2fd-adb7ead4eb44" />
+</p>
 
 <img width="1507" height="644" alt="image" src="https://github.com/user-attachments/assets/0f838511-9893-4944-ac5b-141be37b7d48" />
 
