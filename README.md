@@ -68,6 +68,16 @@ Due to the physical inclination of the LiDAR sensor during data acquisition, the
 
 This transformation ensures spatial consistency across datasets captured at different locations and times.
 
+#### Original Cloud Point
+<p align="center">
+<img width="503" height="459" alt="image" src="https://github.com/user-attachments/assets/caba0682-c9cd-4ef3-8664-6d83f794886c" />
+</p>
+
+### Transformed Cloud Point
+<p align="center">
+<img width="622" height="546" alt="image" src="https://github.com/user-attachments/assets/8f97d29a-2cb7-49bb-8a68-d4c3f1fc30d9" />
+</p>
+
 ---
 
 ### 3. Feature Extraction and Vectorization
