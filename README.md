@@ -107,7 +107,7 @@ The model performs **point-wise semantic segmentation** over the LiDAR point clo
 
 ---
 
-### 5. Evaluation and Generalization
+### 5. Evaluation 
 
 Model performance is evaluated using:
 
@@ -130,5 +130,38 @@ To assess generalization capability, the trained model was tested on terrain sam
 - Precision: 99.28%
 - Recall: 99.28%
 - F1-score: 99.28%
+
+---
+### 6. Generalization
+
+#### Cobblestone
+
+<img width="787" height="446" alt="image" src="https://github.com/user-attachments/assets/31ef4a7f-6143-4793-a2fd-adb7ead4eb44" />
+
+<img width="1507" height="644" alt="image" src="https://github.com/user-attachments/assets/0f838511-9893-4944-ac5b-141be37b7d48" />
+
+#### Asphalt
+
+<img width="807" height="452" alt="image" src="https://github.com/user-attachments/assets/911e2ec3-fdc6-44d1-af94-a8a19dff5633" />
+
+<img width="1490" height="608" alt="image" src="https://github.com/user-attachments/assets/fd187ed7-9a60-4eee-a169-5a8f6f9c6765" />
+
+### Concrete
+
+<img width="879" height="495" alt="image" src="https://github.com/user-attachments/assets/ae88f806-e767-413a-acf2-2a342ffd40ba" />
+
+<img width="1483" height="612" alt="image" src="https://github.com/user-attachments/assets/84531f5e-c844-4445-9383-703d3eec1e00" />
+
+### Gravel
+
+<img width="913" height="513" alt="image" src="https://github.com/user-attachments/assets/cb1ba1ae-ea62-4079-a668-83111aaebf3e" />
+
+<img width="1487" height="599" alt="image" src="https://github.com/user-attachments/assets/acc42c48-5bea-4e10-9f0b-e8f7ad07ffdf" />
+
+### Grass
+
+<img width="861" height="487" alt="image" src="https://github.com/user-attachments/assets/327d29f8-2cd8-4290-83d4-40db9c826d37" />
+
+<img width="1495" height="634" alt="image" src="https://github.com/user-attachments/assets/eecd1b89-5d5a-4ac6-8ff4-43e4419c9627" />
 
 
