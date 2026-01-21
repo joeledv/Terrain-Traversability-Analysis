@@ -73,7 +73,7 @@ This transformation ensures spatial consistency across datasets captured at diff
 <img width="503" height="459" alt="image" src="https://github.com/user-attachments/assets/caba0682-c9cd-4ef3-8664-6d83f794886c" />
 </p>
 
-### Transformed Cloud Point
+#### Transformed Cloud Point
 <p align="center">
 <img width="622" height="546" alt="image" src="https://github.com/user-attachments/assets/8f97d29a-2cb7-49bb-8a68-d4c3f1fc30d9" />
 </p>
