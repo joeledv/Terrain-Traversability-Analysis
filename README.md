@@ -1,4 +1,4 @@
-# Terrain-Traversability-Analysis
+# Terrain Traversability Analysis
 
 ## Installation
 
