@@ -82,12 +82,12 @@ This transformation ensures spatial consistency across datasets captured at diff
 
 ### 3. Feature Extraction and Vectorization
 
-From the transformed point clouds, local features are computed for each point to characterize terrain geometry and material properties. Feature extraction is based on a **K-Nearest Neighbors (KNN)** approach to describe the local neighborhood of each point.
+From the transformed point clouds, local features are computed for each point to characterize terrain geometry and material properties. Feature extraction is based on a **Nearest Neighbors** approach to describe the local neighborhood of each point.
 
 Two neighborhood sizes were evaluated:
 
-- **K = 10**, capturing fine-grained local geometric variations  
-- **K = 50**, capturing more global surface characteristics and increased spatial smoothing  
+- **N = 10**, capturing fine-grained local geometric variations  
+- **N = 50**, capturing more global surface characteristics and increased spatial smoothing  
 
 The extracted features include:
 
@@ -98,7 +98,7 @@ The extracted features include:
 - Surface normal components
 - LiDAR return intensity and reflectivity
 
-Each point is represented as a feature vector, forming the input to the deep learning model. The comparison between K = 10 and K = 50 allowed evaluating the impact of neighborhood size on classification performance and robustness.
+Each point is represented as a feature vector, forming the input to the deep learning model. The comparison between N = 10 and N = 50 allowed evaluating the impact of neighborhood size on classification performance and robustness.
 
 ---
 
@@ -127,15 +127,15 @@ Model performance is evaluated using:
 - F1-score
 - Confusion matrix
 
-To assess generalization capability, the trained model was tested on terrain samples from locations not used during training. This validates robustness against changes in geometry, texture, and environmental conditions. Additionally, the results obtained using **K = 10 and K = 50** were compared to analyze the trade-off between local sensitivity and spatial stability.
+To assess generalization capability, the trained model was tested on terrain samples from locations not used during training. This validates robustness against changes in geometry, texture, and environmental conditions. Additionally, the results obtained using **N = 10 and N = 50** were compared to analyze the trade-off between local sensitivity and spatial stability.
 
-#### K = 10
+#### N = 10
 - Accuracy: 97.82%
 - Precision: 97.78%
 - Recall: 97.76%
 - F1-score: 97.77%
 
-#### K = 50
+#### N = 50
 - Accuracy: 99.30%
 - Precision: 99.28%
 - Recall: 99.28%
