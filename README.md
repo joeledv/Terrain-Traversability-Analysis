@@ -11,7 +11,9 @@
     
 ## Pipeline
 
+<p align="center">
 <img width="1830" height="1016" alt="Captura de pantalla 2025-12-28 181331" src="https://github.com/user-attachments/assets/85244ca8-e3df-4502-8122-6442f2af7ce0" />
+</p>
 
 ---
 
@@ -69,11 +71,13 @@ Due to the physical inclination of the LiDAR sensor during data acquisition, the
 This transformation ensures spatial consistency across datasets captured at different locations and times.
 
 #### Original Cloud Point
+
 <p align="center">
 <img width="503" height="459" alt="image" src="https://github.com/user-attachments/assets/caba0682-c9cd-4ef3-8664-6d83f794886c" />
 </p>
 
 #### Transformed Cloud Point
+
 <p align="center">
 <img width="622" height="546" alt="image" src="https://github.com/user-attachments/assets/8f97d29a-2cb7-49bb-8a68-d4c3f1fc30d9" />
 </p>
@@ -99,6 +103,10 @@ The extracted features include:
 - LiDAR return intensity and reflectivity
 
 Each point is represented as a feature vector, forming the input to the deep learning model. The comparison between N = 10 and N = 50 allowed evaluating the impact of neighborhood size on classification performance and robustness.
+
+<p align="center">
+<img width="3000" height="2964" alt="image" src="https://github.com/user-attachments/assets/90438798-ea89-4f45-a71a-0b0753045fa0" />
+</p>
 
 ---
 
