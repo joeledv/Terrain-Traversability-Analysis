@@ -201,3 +201,12 @@ To assess generalization capability, the trained model was tested on terrain sam
 <p align="center">
 <img width="1495" height="634" alt="image" src="https://github.com/user-attachments/assets/eecd1b89-5d5a-4ac6-8ff4-43e4419c9627" />
 </p>
+
+### 7. Ouster 3D LiDAR Integration on a Scale Jeep Rubicon
+
+<div align="center">
+  <img width="374" height="669" alt="image" src="https://github.com/user-attachments/assets/fc06ed76-e089-4a34-8d85-6efb6aff03ce" />
+  <br><br>
+  <img width="1047" height="591" alt="image" src="https://github.com/user-attachments/assets/a62dce97-8861-4f4c-bf36-655b8a4cbb64" />
+</div>
+
