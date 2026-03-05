@@ -159,12 +159,11 @@ Rather than relying solely on standard validation splits, we tested the model on
 #### Cobblestone
 
 <p align="center">
-<img width="787" height="446" alt="image" src="https://github.com/user-attachments/assets/31ef4a7f-6143-4793-a2fd-adb7ead4eb44" />
-<img width="312" height="204" alt="image" src="https://github.com/user-attachments/assets/0072afe2-2e76-4de5-804d-ed6aa801e0ee" />  
+  <img width="787" height="446" alt="image" src="https://github.com/user-attachments/assets/31ef4a7f-6143-4793-a2fd-adb7ead4eb44" />
 </p>
 
 <p align="center">
-<img width="1507" height="644" alt="image" src="https://github.com/user-attachments/assets/0f838511-9893-4944-ac5b-141be37b7d48" />
+  <img width="1507" height="644" alt="image" src="https://github.com/user-attachments/assets/0f838511-9893-4944-ac5b-141be37b7d48" />
 </p>
 
 #### Asphalt
