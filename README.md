@@ -152,6 +152,10 @@ To assess generalization capability, the trained model was tested on terrain sam
 --- 
 ### 6. Generalization
 
+To validate the robustness and real-world applicability of our best-performing model, we conducted a rigorous **Generalization Test**. 
+
+Rather than relying solely on standard validation splits, we tested the model on a completely new, unseen dataset collected from different environments. This step is crucial to ensure that the model truly understands the intrinsic properties of the terrains instead of just memorizing the training data.
+
 #### Cobblestone
 
 <p align="center">
@@ -202,14 +206,6 @@ To assess generalization capability, the trained model was tested on terrain sam
 <img width="1495" height="634" alt="image" src="https://github.com/user-attachments/assets/eecd1b89-5d5a-4ac6-8ff4-43e4419c9627" />
 </p>
 
-### 7. Ouster 3D LiDAR Integration on a Scale Jeep Rubicon
-
-<div align="center">
-  <img width="362" height="587" alt="image" src="https://github.com/user-attachments/assets/900348cc-e289-45e1-8f99-a51de45ab6c0" />
-  <br><br>
-  <img width="1047" height="591" alt="image" src="https://github.com/user-attachments/assets/a62dce97-8861-4f4c-bf36-655b8a4cbb64" />
-</div>
-
 ---
 ### 7. Experiment Tracking & MLOps
 
@@ -217,6 +213,7 @@ To ensure reproducibility and efficiently manage model training, we integrated *
 
 Our model training and selection process involved the following steps:
 
+* **Feature Vectorization Strategy:** Prior to model training, we extracted local geometric properties from the LiDAR point clouds using a k-Nearest Neighbors (k-NN) approach. We specifically selected **`n_neighbors = 30`**. This value provides an optimal balance: it is large enough to compute robust covariance matrices (mitigating sensor noise) and extract meaningful surface characteristics, yet small enough to preserve sharp spatial transitions between different terrain boundaries without over-smoothing.
 * **Hyperparameter Optimization:** We utilized **Optuna** alongside MLflow to automatically tune the model's hyperparameters. Every trial was systematically logged, allowing us to easily compare different configurations through the MLflow UI dashboard.
 * **Best Model Selection:** By analyzing the logged runs, we identified the best-performing model configuration, which achieved an outstanding **F1-Score of 0.9876**.
 * **Final Retraining:** To maximize learning, the optimal hyperparameter configuration was used to retrain the model on the combined training and validation datasets.
@@ -233,3 +230,50 @@ If you have the local tracking data (`mlruns/`), navigate to the project root in
 
 ```bash
 mlflow ui
+```
+---
+### 8. Model Generalization (XGBoost)
+
+* **Feature-Driven Learning:** Our feature importance analysis revealed that the model relies heavily on **Median Near IR**, **Median Signal**, and **Height Z**. This confirms that the model successfully learned to differentiate terrains based on both their physical geometry (elevation) and material reflectivity (infrared and signal return), making the predictions highly robust in real-world scenarios.
+* **Seamless Integration:** The generalization pipeline seamlessly integrates with our MLOps workflow. We directly load the optimal model artifact from the MLflow registry (`xgboost_mlflow_model.json`) to perform inference on the newly vectorized features of the unseen environments.
+* **Real-World Readiness:** By proving that our XGBoost model maintains high performance on novel data, we confirm its reliability for deployment in autonomous navigation and terrain traversability tasks.
+* **Visual Reference:** Please note that the images of the original sample captures for these unseen environments are displayed in the previous **Section 6: Generalization**.
+
+#### Cobblestone
+
+<p align="center">
+<img width="772" height="436" alt="image" src="https://github.com/user-attachments/assets/8383e322-3263-43a3-9313-02faad628505" />
+</p>
+
+#### Asphalt
+
+<p align="center">
+<img width="757" height="436" alt="image" src="https://github.com/user-attachments/assets/667fe77c-d7a4-400e-b23c-54570619fce0" />  
+</p>
+
+### Concrete
+
+<p align="center">
+<img width="785" height="435" alt="image" src="https://github.com/user-attachments/assets/c9167099-1e96-45fb-9bc7-7f8afdf64e22" />
+</p>
+
+### Gravel
+
+<p align="center">
+<img width="744" height="425" alt="image" src="https://github.com/user-attachments/assets/f8b9b490-035f-4bb4-8d5c-7d3987026069" />
+</p>
+
+### Grass
+
+<p align="center">
+<img width="767" height="435" alt="image" src="https://github.com/user-attachments/assets/a50feb62-5b56-489a-ad7e-48b6af1c27bd" />
+</p>
+
+---
+### 7. Ouster 3D LiDAR Integration on a Scale Jeep Rubicon
+
+<div align="center">
+  <img width="362" height="587" alt="image" src="https://github.com/user-attachments/assets/900348cc-e289-45e1-8f99-a51de45ab6c0" />
+  <br><br>
+  <img width="1047" height="591" alt="image" src="https://github.com/user-attachments/assets/a62dce97-8861-4f4c-bf36-655b8a4cbb64" />
+</div>
