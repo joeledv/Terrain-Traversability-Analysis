@@ -236,6 +236,7 @@ mlflow ui
 
 * **Feature-Driven Learning:** Our feature importance analysis revealed that the model relies heavily on **Median Near IR**, **Median Signal**, and **Height Z**. This confirms that the model successfully learned to differentiate terrains based on both their physical geometry (elevation) and material reflectivity (infrared and signal return), making the predictions highly robust in real-world scenarios.
 * **Seamless Integration:** The generalization pipeline seamlessly integrates with our MLOps workflow. We directly load the optimal model artifact from the MLflow registry (`xgboost_mlflow_model.json`) to perform inference on the newly vectorized features of the unseen environments.
+* **Performance Superiority:** Notably, the XGBoost model achieved better generalization results compared to those observed in Section 6, outperforming the previously utilized Neural Network architecture on unseen data.
 * **Real-World Readiness:** By proving that our XGBoost model maintains high performance on novel data, we confirm its reliability for deployment in autonomous navigation and terrain traversability tasks.
 * **Visual Reference:** Please note that the images of the original sample captures for these unseen environments are displayed in the previous **Section 6: Generalization**.
 
