@@ -163,7 +163,7 @@ Rather than relying solely on standard validation splits, we tested the model on
 </p>
 
 <p align="center">
-  <img width="1507" height="644" alt="image" src="https://github.com/user-attachments/assets/0f838511-9893-4944-ac5b-141be37b7d48" />
+  <img width="326" height="209" alt="image" src="https://github.com/user-attachments/assets/fe3a75ee-317e-4d5e-9f04-b0717931240b" />
 </p>
 
 #### Asphalt
