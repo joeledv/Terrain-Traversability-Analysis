@@ -160,6 +160,7 @@ Rather than relying solely on standard validation splits, we tested the model on
 
 <p align="center">
 <img width="787" height="446" alt="image" src="https://github.com/user-attachments/assets/31ef4a7f-6143-4793-a2fd-adb7ead4eb44" />
+<img width="312" height="204" alt="image" src="https://github.com/user-attachments/assets/0072afe2-2e76-4de5-804d-ed6aa801e0ee" />  
 </p>
 
 <p align="center">
@@ -176,7 +177,7 @@ Rather than relying solely on standard validation splits, we tested the model on
 <img width="1490" height="608" alt="image" src="https://github.com/user-attachments/assets/fd187ed7-9a60-4eee-a169-5a8f6f9c6765" />
 </p>
 
-### Concrete
+#### Concrete
 
 <p align="center">
 <img width="879" height="495" alt="image" src="https://github.com/user-attachments/assets/ae88f806-e767-413a-acf2-2a342ffd40ba" />
@@ -186,7 +187,7 @@ Rather than relying solely on standard validation splits, we tested the model on
 <img width="1483" height="612" alt="image" src="https://github.com/user-attachments/assets/84531f5e-c844-4445-9383-703d3eec1e00" />
 </p>
 
-### Gravel
+#### Gravel
 
 <p align="center">
 <img width="913" height="513" alt="image" src="https://github.com/user-attachments/assets/cb1ba1ae-ea62-4079-a668-83111aaebf3e" />
@@ -196,7 +197,7 @@ Rather than relying solely on standard validation splits, we tested the model on
 <img width="1487" height="599" alt="image" src="https://github.com/user-attachments/assets/acc42c48-5bea-4e10-9f0b-e8f7ad07ffdf" />
 </p>
 
-### Grass
+#### Grass
 
 <p align="center">
 <img width="861" height="487" alt="image" src="https://github.com/user-attachments/assets/327d29f8-2cd8-4290-83d4-40db9c826d37" />
