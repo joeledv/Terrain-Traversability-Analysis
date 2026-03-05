@@ -242,31 +242,51 @@ mlflow ui
 #### Cobblestone
 
 <p align="center">
-<img width="772" height="436" alt="image" src="https://github.com/user-attachments/assets/8383e322-3263-43a3-9313-02faad628505" />
+  <img width="772" height="436" alt="image" src="https://github.com/user-attachments/assets/8383e322-3263-43a3-9313-02faad628505" />
+</p>
+
+<p align="center">
+  <img width="314" height="205" alt="image" src="https://github.com/user-attachments/assets/17f9116c-3a9b-4ab1-9703-b71a859159ad" />
 </p>
 
 #### Asphalt
 
 <p align="center">
-<img width="757" height="436" alt="image" src="https://github.com/user-attachments/assets/667fe77c-d7a4-400e-b23c-54570619fce0" />  
+  <img width="757" height="436" alt="image" src="https://github.com/user-attachments/assets/667fe77c-d7a4-400e-b23c-54570619fce0" />  
+</p>
+
+<p align="center">
+  <img width="315" height="146" alt="image" src="https://github.com/user-attachments/assets/bd8ac03f-c9fb-4045-895e-155bfda8ad63" />
 </p>
 
 ### Concrete
 
 <p align="center">
-<img width="785" height="435" alt="image" src="https://github.com/user-attachments/assets/c9167099-1e96-45fb-9bc7-7f8afdf64e22" />
+  <img width="785" height="435" alt="image" src="https://github.com/user-attachments/assets/c9167099-1e96-45fb-9bc7-7f8afdf64e22" />
+</p>
+
+<p align="center">
+  <img width="313" height="203" alt="image" src="https://github.com/user-attachments/assets/50903d61-48e8-42a1-bba0-18afbed93ce6" />
 </p>
 
 ### Gravel
 
 <p align="center">
-<img width="744" height="425" alt="image" src="https://github.com/user-attachments/assets/f8b9b490-035f-4bb4-8d5c-7d3987026069" />
+  <img width="744" height="425" alt="image" src="https://github.com/user-attachments/assets/f8b9b490-035f-4bb4-8d5c-7d3987026069" />
+</p>
+
+<p align="center">
+  <img width="314" height="223" alt="image" src="https://github.com/user-attachments/assets/62e2a4c0-2598-4714-8ba4-c7777b539550" />
 </p>
 
 ### Grass
 
 <p align="center">
-<img width="767" height="435" alt="image" src="https://github.com/user-attachments/assets/a50feb62-5b56-489a-ad7e-48b6af1c27bd" />
+  <img width="767" height="435" alt="image" src="https://github.com/user-attachments/assets/a50feb62-5b56-489a-ad7e-48b6af1c27bd" />
+</p>
+
+<p align="center">
+  <img width="312" height="204" alt="image" src="https://github.com/user-attachments/assets/ede25947-ac51-41e4-b80a-f482da5419cb" />
 </p>
 
 ---
