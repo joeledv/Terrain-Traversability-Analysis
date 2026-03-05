@@ -223,8 +223,8 @@ Our model training and selection process involved the following steps:
 * * **Evaluation & Interpretability:** We evaluated the final model using a confusion matrix to analyze class-wise performance. Additionally, we leveraged MLflow's tracking capabilities to extract **Feature Importance**, providing clear insights into which LiDAR geometric inputs had the greatest impact on the model's predictions.
 
 <p align="center">
-  <img width="45%" alt="Confusion Matrix" src="[Pega_aqui_el_link_de_tu_matriz_de_confusion]">
-  <img width="45%" alt="Feature Importance" src="[Pega_aqui_el_link_de_tu_feature_importance]">
+  <img width="45%" alt="Confusion Matrix" src="[https://github.com/user-attachments/assets/c7ae0930-740c-4d21-9cd4-4c85eaf7c616"]">
+  <img width="45%" alt="Feature Importance" src="[https://github.com/user-attachments/assets/2513cbb8-0611-4b87-9527-71d9fd4ebd46]">
 </p>
 * **Model Export:** Finally, the best model was saved and exported in `.json` format, making it lightweight and ready for deployment.
 
