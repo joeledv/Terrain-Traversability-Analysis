@@ -149,7 +149,7 @@ To assess generalization capability, the trained model was tested on terrain sam
 - Recall: 99.28%
 - F1-score: 99.28%
 
----
+--- 
 ### 6. Generalization
 
 #### Cobblestone
@@ -209,3 +209,27 @@ To assess generalization capability, the trained model was tested on terrain sam
   <br><br>
   <img width="1047" height="591" alt="image" src="https://github.com/user-attachments/assets/a62dce97-8861-4f4c-bf36-655b8a4cbb64" />
 </div>
+
+---
+### 7. Experiment Tracking & MLOps
+
+To ensure reproducibility and efficiently manage model training, we integrated **MLflow** into our pipeline, centralizing all tracking workflows in the `MLOps/` directory.
+
+Our model training and selection process involved the following steps:
+
+* **Hyperparameter Optimization:** We utilized **Optuna** alongside MLflow to automatically tune the model's hyperparameters. Every trial was systematically logged, allowing us to easily compare different configurations through the MLflow UI dashboard.
+* **Best Model Selection:** By analyzing the logged runs, we identified the best-performing model configuration, which achieved an outstanding **F1-Score of 0.9876**.
+* **Final Retraining:** To maximize learning, the optimal hyperparameter configuration was used to retrain the model on the combined training and validation datasets.
+* * **Evaluation & Interpretability:** We evaluated the final model using a confusion matrix to analyze class-wise performance. Additionally, we leveraged MLflow's tracking capabilities to extract **Feature Importance**, providing clear insights into which LiDAR geometric inputs had the greatest impact on the model's predictions.
+
+<p align="center">
+  <img width="45%" alt="Confusion Matrix" src="[Pega_aqui_el_link_de_tu_matriz_de_confusion]">
+  <img width="45%" alt="Feature Importance" src="[Pega_aqui_el_link_de_tu_feature_importance]">
+</p>
+* **Model Export:** Finally, the best model was saved and exported in `.json` format, making it lightweight and ready for deployment.
+
+**How to view the MLflow Dashboard:**
+If you have the local tracking data (`mlruns/`), navigate to the project root in your terminal and run the following command to access the UI:
+
+```bash
+mlflow ui
