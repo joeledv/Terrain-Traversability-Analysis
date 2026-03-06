@@ -298,3 +298,15 @@ mlflow ui
   <br><br>
   <img width="1047" height="591" alt="image" src="https://github.com/user-attachments/assets/a62dce97-8861-4f4c-bf36-655b8a4cbb64" />
 </div>
+
+---
+### 10. Future Work
+
+As this project continues to evolve, our roadmap focuses on improving model robustness, expanding hardware integration, and implementing continuous MLOps practices:
+
+* **Dataset Expansion & Label Redefinition:** Expand the dataset to include a wider variety of terrains and environmental conditions. We also plan to redefine the output labels directly in terms of *traversability indices* rather than specific soil types.
+* **Sensor Fusion:** Integrate multiple sensors (combining 3D LiDAR with RGB cameras) to enrich feature extraction and significantly improve terrain discrimination.
+* **Autonomous Navigation:** Expand the project scope towards small-scale autonomous navigation, focusing on real-time obstacle detection and basic path planning.
+* **Real-Time Embedded Implementation:** Deploy the entire inference pipeline to run in real-time on an embedded edge device.
+* **Production Monitoring & Data Drift Detection (MLOps):** Implement a continuous monitoring system for the deployed model to automatically detect *data drift* (e.g., encountering entirely new terrains or sensor noise) and flag low-confidence predictions.
+* **Edge MLOps & Automated Deployment:** Establish an Over-The-Air (OTA) update pipeline. Once MLflow identifies and registers a superior model configuration locally, it will be automatically packaged and deployed directly to the embedded system.
